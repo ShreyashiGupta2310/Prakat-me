@@ -1,0 +1,81 @@
+.landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("/public/logo3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+/* Navbar layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+  height: 80px;
+  background: transparent;
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo wrapper */
+.navHeader {
+  display: flex;
+  align-items: center;
+}
+
+/* ✅ Perfect logo size and position */
+.logoImage {
+  height: 60px; /* ideal balanced size */
+  width: auto;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(255, 105, 180, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 0;     /* keeps it flush to the left */
+  padding: 0;         /* removes extra spacing */
+  position: relative;
+  top: 0;
+}
+
+.logoImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
+}
+
+/* Buttons container */
+.navList {
+  display: flex;
+  gap: 20px;
+}
+.join_as_Guest{
+ margin-top: 500px;
+ margin-left: 200px;
+ height: 50px;
+ width: 150px;
+
+}
+/* Common button style */
+.btn {
+  padding: 8px 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 15px;
+  color: white;
+  background-color: #3b82f6; /* Blue */
+  box-shadow: 0 0 15px 3px rgba(255, 105, 180, 0.5); /* Pink glow */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.btn:hover {
+  transform: scale(2.00);
+  box-shadow: 0 0 20px 6px rgba(255, 105, 180, 0.8);
+}
+
+/* Optional: darker shade for Sign Up */
+.signup {
+  background-color: #2563eb;
+}
