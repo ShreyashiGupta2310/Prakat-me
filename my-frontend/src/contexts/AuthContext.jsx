@@ -58,7 +58,8 @@ const handleRegister = async (name, username, password) => {
       throw err;
     }
   };
- const getHistoryOfUser = async () => {
+ const getHistoryOfUser = async () => 
+  {
         try {
             let request = await client.get("/get_all_activity", {
                 params: {
@@ -72,7 +73,8 @@ const handleRegister = async (name, username, password) => {
         }
     }
 
-    const addToHistory = async (meetingCode) => {
+    const addToHistory = async (meetingCode) =>
+       {
         try {
             let request = await client.post("/add_to_activity", {
                 token: localStorage.getItem("token"),
@@ -84,7 +86,8 @@ const handleRegister = async (name, username, password) => {
         }
     }
 
-  const data = {
+  const data =
+   {
     userData,
     setUserData,
     handleRegister,
@@ -94,7 +97,7 @@ const handleRegister = async (name, username, password) => {
   };
 
   return (
-    <AuthContext.Provider value={data}>
+       <AuthContext.Provider value={data}>
       {children}
     </AuthContext.Provider>
   );
