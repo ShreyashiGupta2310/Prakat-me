@@ -89,35 +89,20 @@
 
 
 @media (max-width: 768px) {
-  .main-section {
+  .navbar {
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .main-text {
-    font-size: 32px;
-  }
-
-  .circle-wrapper {
-    width: 300px;
-    height: 300px;
+    align-items: center;
+    gap: 12px;
   }
 
   .navList {
-    display: none;  
-  }
-}
-
-
-@media (max-width: 480px) {
-  .main-text {
-    font-size: 28px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
   }
 
-  .circle-wrapper {
-    width: 250px;
-    height: 250px;
+  .btn {
+    padding: 8px 14px;
+    font-size: 14px;
   }
 }
